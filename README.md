@@ -20,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Should be pretty straightforward to use:
+
+```ruby
+parser = Spectral::Json::JsonParser('{ "hello": "world", "today": "yes" }')
+json = parser.parse
+puts json['hello'] # => 'world'
+puts json['today'] # => 'yes'
+```
 
 ## Development
 
